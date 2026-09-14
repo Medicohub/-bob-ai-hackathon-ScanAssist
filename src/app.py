@@ -16,14 +16,30 @@ st.set_page_config(
 # LOAD DATA
 # =====================================
 
-with open("procedures.json", "r", encoding="utf-8") as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+PROCEDURES_FILE = os.path.join(
+    BASE_DIR,
+    "procedures.json"
+)
+
+REPORTS_DIR = os.path.join(
+    BASE_DIR,
+    "reports"
+)
+
+with open(
+    PROCEDURES_FILE,
+    "r",
+    encoding="utf-8"
+) as f:
     procedures = json.load(f)
 
-os.makedirs("reports", exist_ok=True)
+os.makedirs(REPORTS_DIR, exist_ok=True)
 
 report_count = len(
     [
-        f for f in os.listdir("reports")
+        f for f in os.listdir(REPORTS_DIR)
         if f.endswith(".txt")
     ]
 )
