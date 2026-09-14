@@ -25,7 +25,7 @@ ScanAssist helps technologists quickly identify approved troubleshooting procedu
 
 ## 💡 Solution
 
-ScanAssist is a Streamlit-based troubleshooting assistant designed for CT and MRI environments.
+ScanAssist is a Streamlit-based troubleshooting assistant designed for CT and MRI environments .
 
 The platform provides guided troubleshooting procedures, risk assessment, severity scoring, engineer recommendations, analytics dashboards, and automated escalation report generation. This helps reduce downtime, standardize troubleshooting, and improve communication with service engineers.
 
