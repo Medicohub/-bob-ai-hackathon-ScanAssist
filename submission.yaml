@@ -1,58 +1,64 @@
-project:
-  name: ScanAssist
-  tagline: Safety-First CT/MRI Troubleshooting Assistant
-
 team:
-  name: ScanAssist
-  lead: Parth
+  name: "ScanAssist"
+  track: "AI"
+
+  lead:
+    name: "Mohmedkaif Ranawadiya"
+    email: "24bmit023@charusat.edu.in"
+
   members:
-    - Parth
+    - name: "Ishita SanjivKumar Desai"
+      email: "24bmit005@charusat.edu.in"
 
-track: AI
+    - name: "Angel Hiteshbhai Hirpara"
+      email: "24bmit007@charusat.edu.in"
 
-problem_statement: >
-  CT and MRI scanners are critical healthcare systems.
-  When faults occur, technologists often need to search manuals,
-  remember troubleshooting procedures, or wait for engineer support,
-  increasing downtime and delaying patient care.
+    - name: "Ishita Nileshkumar Parekh"
+      email: "24bmit009@charusat.edu.in"
 
-solution: >
-  ScanAssist provides guided troubleshooting procedures,
-  risk assessment, severity scoring, engineer recommendations,
-  analytics dashboards, and automated escalation report generation.
+submission:
+  title: "ScanAssist"
 
-repository:
-  source_code: src/
-  documentation: docs/
-  demo: demo/
-  presentation: presentation/
+  problem_statement: >
+    CT and MRI scanners are critical healthcare systems. When faults occur,
+    technologists often need to search manuals, remember troubleshooting procedures,
+    or wait for engineer support, increasing downtime and delaying patient care.
 
-technologies:
-  languages:
-    - Python
-  frameworks:
-    - Streamlit
-  database:
-    - JSON
-  libraries:
-    - Pandas
-    - FPDF
+  solution_summary: >
+    ScanAssist is a safety-first CT/MRI troubleshooting assistant that provides
+    guided procedures, risk assessment, severity scoring, analytics dashboards,
+    and automated engineer escalation reports.
 
-features:
-  - Smart Procedure Search
-  - Safety-First Guidance
-  - Interactive Checklists
-  - Engineer Report Generation
-  - Analytics Dashboard
-  - Knowledge Base Management
+  key_features:
+    - "Smart procedure search"
+    - "Interactive troubleshooting checklists"
+    - "Risk and severity assessment"
+    - "Engineer report generation"
+    - "Analytics dashboard"
 
-run:
-  install: pip install -r src/requirements.txt
-  start: streamlit run src/app.py
+  tech_stack:
+    languages:
+      - "Python"
 
-demo:
-  video: demo/demo-video-link.txt
-  live_url: demo/live-demo-url.txt
-  screenshots: demo/screenshots/
+    frameworks:
+      - "Streamlit"
 
-status: Working Prototype
+    ibm_technologies: []
+
+    databases:
+      - "JSON"
+
+    other:
+      - "Pandas"
+      - "FPDF"
+      - "GitHub"
+
+  what_we_are_most_proud_of: >
+    ScanAssist transforms static troubleshooting documentation into an
+    interactive assistant that helps technologists resolve issues faster
+    and generate structured engineer handover reports.
+
+  known_limitations: >
+    The current version uses a static JSON knowledge base and rule-based
+    recommendations. It is not yet integrated with hospital systems or
+    predictive maintenance platforms.
