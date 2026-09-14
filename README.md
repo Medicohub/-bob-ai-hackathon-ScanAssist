@@ -1,6 +1,6 @@
-# 🚀 [Your Project Title Here]
+# 🩺 ScanAssist
 
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
+> Safety-First CT/MRI Troubleshooting Assistant
 
 ---
 
@@ -8,36 +8,37 @@
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| **Team Name** | ScanAssist |
+| **Track** | AI |
+| **Team Lead** | Parth |
+| **Members** | Parth |
 
 ---
 
 ## 🎯 Problem Statement
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
+CT and MRI scanners are critical healthcare systems. When faults occur, technologists often need to search manuals, remember troubleshooting procedures, or wait for engineer support, increasing downtime and delaying patient care.
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
+ScanAssist helps technologists quickly identify approved troubleshooting procedures, follow safety-first workflows, and generate structured engineer handover reports when issues cannot be resolved.
 
 ---
 
 ## 💡 Solution
 
-> In 2–3 sentences: What did you build? How does it solve the problem above?
+ScanAssist is a Streamlit-based troubleshooting assistant designed for CT and MRI environments.
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+The platform provides guided troubleshooting procedures, risk assessment, severity scoring, engineer recommendations, analytics dashboards, and automated escalation report generation. This helps reduce downtime, standardize troubleshooting, and improve communication with service engineers.
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
+- **Smart Procedure Search** – Finds troubleshooting procedures using keyword and similarity matching.
+- **Safety-First Guidance** – Displays risk levels and severity scores before troubleshooting.
+- **Interactive Checklists** – Guides technologists through approved troubleshooting steps.
+- **Engineer Report Generation** – Creates TXT and PDF escalation reports automatically.
+- **Analytics Dashboard** – Provides insights into procedure categories, risk distribution, and severity trends.
+- **Knowledge Base Management** – Supports a structured CT/MRI troubleshooting database.
 
 ---
 
@@ -45,50 +46,59 @@
 
 | Category | Technologies |
 |---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
+| **Languages** | Python |
+| **Frameworks** | Streamlit |
+| **IBM Technologies** | Repository structure based on IBM Hackathon Template |
+| **Databases** | JSON Knowledge Base |
+| **Other** | Git, GitHub, FPDF, Pandas |
 
 ---
 
 ## 📁 Repository Structure
 
-```
-├── src/                  # All source code
-├── docs/                 # Written documentation
+```text
+├── src/
+│   ├── app.py
+│   ├── procedures.json
+│   ├── pages/
+│   └── reports/
+│
+├── docs/
 │   ├── problem-statement.md
 │   ├── solution-overview.md
 │   ├── architecture.md
 │   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
+│
+├── demo/
+│   ├── screenshots/
+│   ├── demo-video-link.txt
+│   └── live-demo-url.txt
+│
+├── presentation/
+│
+└── submission.yaml
 ```
 
 ---
 
 ## ⚡ How to Run
 
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
-
 ```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+# Clone repository
 
-# 2. Install dependencies
-[your install command here]
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
+# Open repository
 
-# 4. Run the project
-[your run command here]
+cd YOUR_REPOSITORY
+
+# Install dependencies
+
+pip install -r src/requirements.txt
+
+# Run application
+
+streamlit run src/app.py
 ```
 
 ---
@@ -97,25 +107,24 @@ cp .env.example .env
 
 | Artifact | Link |
 |---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
+| 📹 Demo Video | See demo/demo-video-link.txt |
+| 🌐 Live Demo | See demo/live-demo-url.txt |
+| 🖼️ Screenshots | See demo/screenshots/ |
+| 📊 Presentation | See presentation/ |
 
 ---
 
 ## ⚠️ Known Limitations
 
-> Be honest — judges appreciate transparency over overclaiming.
-
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
+- Uses a static JSON knowledge base.
+- Troubleshooting procedures are currently predefined.
+- Does not directly integrate with hospital systems.
+- Engineer recommendations are rule-based rather than predictive.
 
 ---
 
 ## 🏅 What We're Most Proud Of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
+ScanAssist transforms static troubleshooting documentation into an interactive safety-first assistant. By combining guided procedures, risk assessment, analytics, and automated engineer handover reports, the platform helps CT/MRI technologists respond to equipment issues faster and more consistently while maintaining patient safety.
 
 ---

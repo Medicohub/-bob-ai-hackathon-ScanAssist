@@ -1,21 +1,14 @@
 # Problem Statement
 
-## Background
+CT and MRI scanners are critical medical imaging systems. When faults occur, technologists often need to search manuals, remember troubleshooting procedures, or wait for engineers.
 
-[Describe the broader context. What domain or industry does this problem belong to? What situation creates the problem?]
+This can lead to:
 
-## The Problem
+- Increased machine downtime
+- Delayed patient scans
+- Inconsistent troubleshooting
+- Poor documentation during escalation
 
-[State the problem clearly and specifically. Avoid vague statements like "things are slow" — instead say "Operations teams spend an average of 45 minutes per incident diagnosing pipeline failures because logs are scattered across 6 different tools."]
+Many common issues can be safely checked by technologists before escalating to engineers, but there is no simple assistant that guides them through approved troubleshooting steps and generates structured escalation reports.
 
-## Who is Affected
-
-[Describe the specific user or persona experiencing this problem. Be concrete — not "developers" but "backend engineers managing CI/CD pipelines in enterprises with 50+ microservices."]
-
-## Why It Matters
-
-[What is the cost of this problem? Lost time? Revenue? Safety risk? Frustration? Quantify if possible.]
-
-## Why Existing Solutions Fall Short
-
-[Briefly explain what people currently do and why it doesn't fully solve the problem. This sets up why your solution is needed.]
+ScanAssist addresses this problem by providing a safety-first troubleshooting assistant for CT and MRI operators.
