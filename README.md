@@ -10,8 +10,8 @@
 |---|---|
 | **Team Name** | ScanAssist |
 | **Track** | AI |
-| **Team Lead** | Parth |
-| **Members** | Parth |
+| **Team Lead** | Mohmedkaif Ranawadiya |
+| **Members** | Ishita SanjivKumar Desai, Angel Hiteshbhai Hirpara, Ishita Nileshkumar Parekh |
 
 ---
 
